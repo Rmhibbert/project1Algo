@@ -68,24 +68,24 @@
     <Compile Include="Assets\RW\Scripts\Movement.cs" />
     <Compile Include="Assets\RW\Scripts\rotate.cs" />
     <Compile Include="Assets\RW\Scripts\Sheep.cs" />
-    <Compile Include="Assets\RW\Scripts\sheepManager.cs" />
+    <Compile Include="Assets\RW\Scripts\SheepSpawner.cs" />
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/polytech2024/roryAlgorithmic/01-introduction-to-unity-scripting/01-starter-code/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/polytech2024/project1Algo/01-starter-code/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

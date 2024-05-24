@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Sheep : MonoBehaviour
 {
@@ -10,27 +8,25 @@ public class Sheep : MonoBehaviour
     private Collider myCollider;
     private Rigidbody myRigidbody;
 
+    
+
     private void Awake()
     {
-        // GetComponent is a special Unity function that gets a reference to a component
-        // that is also on this same GameObject. The type provided in the < > is what
-        // type of component the function will look for.
-        //
-        // Tip: If the component that you want is on a child of this GameObject, you can
-        // use GetComponentInChildren<>()
+        // Get the required components
         myCollider = GetComponent<BoxCollider>();
         myRigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        // Move forwards
-        transform.Translate(Vector3.forward * runSpeed * Time.deltaTime);
+        transform.Translate(-transform.forward * runSpeed * Time.deltaTime);
+
     }
 
     private void HitByHay()
     {
-        Destroy(gameObject);
+        Debug.Log("Hit by Hay - Destroying Sheep");
+        Destroy(gameObject); // Destroy the sheep
     }
 
     private void Drop()
@@ -44,15 +40,19 @@ public class Sheep : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collision detected with: " + other.tag);
+
         // If we collided with hay:
         if (other.CompareTag("Hay"))
         {
+            Debug.Log("Collided with Hay");
             Destroy(other.gameObject);
             HitByHay();
         }
         // If we collided with the edge of the map:
         else if (other.CompareTag("DropSheep") && !dropped)
         {
+            Debug.Log("Collided with DropSheep");
             Drop();
         }
     }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -1185766366447412800}
   - component: {fileID: -3454225359577810279}
   - component: {fileID: -505123567373697263}
+  - component: {fileID: 7379693160399117696}
   m_Layer: 0
   m_Name: Hay Bale
   m_TagString: Hay
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2539350499695364274}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 10.792056, y: 34.223503, z: -55.174377}
+  m_LocalPosition: {x: 10.792056, y: 2, z: -55.174377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,3 +125,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   endZone: {fileID: 3867175481268576257, guid: 30ebf14152d560c48b4e0245ddc36392, type: 3}
+--- !u!65 &7379693160399117696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2539350499695364274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.208185, y: 2.14413, z: 2.1543686}
+  m_Center: {x: 0.027273893, y: -0.024617847, z: 0.070471995}
