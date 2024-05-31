@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.17888115, g: 0.22398457, b: 0.30584916, a: 1}
+  m_IndirectSpecularColor: {r: 0.17888132, g: 0.2239849, b: 0.30584964, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,12 +138,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ce1586839200d498e71a9ed64ef4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 20
   horizontalBoundary: 21
   hayBalePrefab: {fileID: 2539350499695364274, guid: 83fed84e09fe84b46b04b057a8dc52fd,
     type: 3}
   haySpawnPoint: {fileID: 126515804}
-  shootInterval: 2
+  shootInterval: 1
   shootTimer: 0
 --- !u!4 &126515804 stripped
 Transform:
@@ -447,7 +447,7 @@ Camera:
     height: 1
   near clip plane: 300
   far clip plane: 500
-  field of view: 8
+  field of view: 11.4
   orthographic: 0
   orthographic size: 24
   m_Depth: -1
@@ -473,12 +473,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.23911765, y: -0.3696438, z: 0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: 217, y: 182.4, z: -230}
+  m_LocalPosition: {x: 216.82, y: 176.4, z: -229.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 30, y: -45, z: 0}
+--- !u!1 &843549811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843549812}
+  m_Layer: 0
+  m_Name: sheepPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &843549812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843549811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.7, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &918502471
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918502471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalPosition: {x: -0.2, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -536,6 +566,36 @@ MonoBehaviour:
   rotationSpeedY: 70
   rotationSpeedX: 0
   rotationSpeedZ: 0
+--- !u!1 &1423793005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423793006}
+  m_Layer: 0
+  m_Name: sheepPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1423793006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423793005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.1, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508344888
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +723,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1700587678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3867175481268576257, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_Name
+      value: sheepEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268576257, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_TagString
+      value: DropSheep
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867175481268419617, guid: 30ebf14152d560c48b4e0245ddc36392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30ebf14152d560c48b4e0245ddc36392, type: 3}
 --- !u!1 &2078764374
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,8 +828,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sheepPrefab: {fileID: 2168193199179871284, guid: 0af8421c42f99d542b95dd6367ff560a,
     type: 3}
-  spawnInterval: 3
+  spawnInterval: 2
   spawnPoint: {fileID: 918502472}
+  spawnPoint1: {fileID: 1423793006}
+  spawnPoint2: {fileID: 843549812}
 --- !u!4 &2078764376
 Transform:
   m_ObjectHideFlags: 0
