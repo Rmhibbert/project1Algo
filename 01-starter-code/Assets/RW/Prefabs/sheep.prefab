@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 10
   dropDestroyDelay: 3
+  HeartFeedbackPrefab: {fileID: 4241246808821525589, guid: 778a7cf08ec373642a6115c391d7c90c,
+    type: 3}
 --- !u!65 &5967128571135722992
 BoxCollider:
   m_ObjectHideFlags: 0

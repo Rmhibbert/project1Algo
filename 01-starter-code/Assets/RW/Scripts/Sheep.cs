@@ -7,8 +7,9 @@ public class Sheep : MonoBehaviour
     private bool dropped;
     private Collider myCollider;
     private Rigidbody myRigidbody;
+    public GameObject HeartFeedbackPrefab;
 
-    
+
 
     private void Awake()
     {
@@ -48,6 +49,12 @@ public class Sheep : MonoBehaviour
             Debug.Log("Collided with Hay");
             Destroy(other.gameObject);
             HitByHay();
+            GameObject heartFeedback = Instantiate(HeartFeedbackPrefab, transform.position, Quaternion.identity);
+            HeartFeedback heartFeedbackScript = heartFeedback.GetComponent<HeartFeedback>();
+            if (heartFeedbackScript != null)
+            {
+                heartFeedbackScript.SetupAndPlay(transform.position);
+            }
         }
         // If we collided with the edge of the map:
         else if (other.CompareTag("DropSheep") && !dropped)
