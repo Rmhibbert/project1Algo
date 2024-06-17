@@ -76,6 +76,7 @@
     <Compile Include="Assets\RW\Scripts\HeartFeedback.cs" />
     <Compile Include="Assets\RW\Scripts\Movement.cs" />
     <Compile Include="Assets\RW\Scripts\rotate.cs" />
+    <Compile Include="Assets\RW\Scripts\SFXManager.cs" />
     <Compile Include="Assets\RW\Scripts\Sheep.cs" />
     <Compile Include="Assets\RW\Scripts\SheepSpawner.cs" />
     <None Include="Assets\DOTween\readme.txt" />

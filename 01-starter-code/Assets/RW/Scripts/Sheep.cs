@@ -28,6 +28,7 @@ public class Sheep : MonoBehaviour
     {
         Debug.Log("Hit by Hay - Destroying Sheep");
         Destroy(gameObject); // Destroy the sheep
+        SFXManager.Instance.PlaySheepHitSound();
     }
 
     private void Drop()
@@ -61,6 +62,7 @@ public class Sheep : MonoBehaviour
         {
             Debug.Log("Collided with DropSheep");
             Drop();
+            SFXManager.Instance.PlaySheepDroppedSound();
         }
     }
 }
