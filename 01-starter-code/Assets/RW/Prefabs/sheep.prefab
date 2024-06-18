@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5fa63ee53ead8d44b995181e5479123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
+  runSpeed: 20
   dropDestroyDelay: 3
   HeartFeedbackPrefab: {fileID: 4241246808821525589, guid: 778a7cf08ec373642a6115c391d7c90c,
     type: 3}

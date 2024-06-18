@@ -56,6 +56,7 @@ public class Sheep : MonoBehaviour
             {
                 heartFeedbackScript.SetupAndPlay(transform.position);
             }
+            GameManager.Instance.SaveSheep();
         }
         // If we collided with the edge of the map:
         else if (other.CompareTag("DropSheep") && !dropped)
@@ -63,6 +64,7 @@ public class Sheep : MonoBehaviour
             Debug.Log("Collided with DropSheep");
             Drop();
             SFXManager.Instance.PlaySheepDroppedSound();
+            GameManager.Instance.DroppedSheep();
         }
     }
 }
